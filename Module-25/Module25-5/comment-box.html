@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Now comment</title>
+
+</head>
+<body>
+    <h1>please add your comment</h1>
+    <div id="comment-container">
+        <!-- p*3>lorem30 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum, eligendi repudiandae odit dolores minima laboriosam accusantium adipisci est nam unde blanditiis explicabo neque id. Quae eum id error beatae, quam, illo placeat ad ipsa omnis, inventore ex pariatur deserunt odit doloremque obcaecati temporibus. Ea culpa adipisci nulla praesentium inventore?</p>
+        <p>Accusantium, quaerat eaque beatae officiis placeat tempora cum aperiam odio blanditiis maiores qui rem temporibus reiciendis obcaecati, accusamus nulla assumenda quae tenetur consequuntur nam at voluptas? Nemo consequuntur, minima cumque illo magnam at, nobis eius, neque facilis corrupti iusto omnis sapiente aperiam? Quidem officiis alias illum error deleniti nobis in.</p>
+        <p>Incidunt explicabo excepturi ullam praesentium. Commodi dolorum dolore perferendis, exercitationem sunt animi praesentium iusto provident totam suscipit vel molestiae, voluptates blanditiis. Necessitatibus error porro ipsa consequatur itaque velit voluptas quam vel ipsam commodi voluptatibus dicta sint blanditiis minima voluptates, et dolorum reiciendis maiores ad in animi. Commodi at illum aut?</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+    </div>
+
+    <!-- script style -->
+    <script>
+        //  step-01: add event listener to the post button
+        document.getElementById('btn-post').addEventListener('click', function(){
+            // console.log('I am razu ')
+
+            // step-02: get the comment inside the text button
+            const commenBox = document.getElementById('new-comment')
+            // এটা আমরা কনসল লগ করে দেখতে পারি commenBox এর ভিতর কী আছে। 
+            // console.log(commenBox)
+            const newComment = commenBox.value;
+            // console.log(newComment)
+
+            //step-03: set the comment inside the comment container
+                // 1. get the comment conatiner
+                // 2. create a new element (p tag)
+                // 3. set the text of the comment as innerText of the p tag
+                // 4. add the p tag using appendChild
+            const commentContainer = document.getElementById('comment-container')
+
+            const p = document.createElement('p')
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+
+            // step-04: clear the text area
+            commenBox.value = '';
+
+        })
+    </script>
+</body>
+</html>

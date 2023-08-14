@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handlerstatus">Default Text</h3>
+
+    <p id="input-text-display">Default Input text</p>
+    <input type="text" id="input-fild">
+    <button id="btn-update">update</button>
+
+    <button onclick = "handleOnClick()">andle Event by Add onclick Function</button>
+
+     <!-- option 2 -->
+    <button id="event-lisenter">handle event by addEventListener</button>
+    <script>
+        // option 2: recap
+        document.getElementById('btn-update').addEventListener('click', function(){
+            // console.log('update button clicked')
+            const inputFile = document.getElementById('input-fild')
+            // console.log(inputFile)
+            const inputText = inputFile.value
+            
+
+            const p = document.getElementById('input-text-display')
+            p.innerText = inputText;
+            inputFile.value = '';
+        })
+    </script>
+    <script src="event-summary.js"></script>
+</body>
+</html>
