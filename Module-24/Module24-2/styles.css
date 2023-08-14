@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+.important-palces{color: aqua;}
+
+li{color:blue;}
+
+#fruits-title{color: black;}
+
+.important-palces{
+    color: rgb(255, 0, 140);
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
+

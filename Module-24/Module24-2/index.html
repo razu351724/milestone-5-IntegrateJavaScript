@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
-    <style>
-        li{color:blue;}
-        #fruits-title{color: black;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -23,8 +20,8 @@
                 <li>bonobash</li>
             </ul>
         </section>
-        <section>
-            <h1 id="fruits-title">Fruits I like </h1>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class=" some-class random-class blue-bg">Fruits I like </h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
@@ -41,31 +38,6 @@
             </ul>
         </section>
     </main>
-    <script>
-        // কোনো একটি এস্পেসিপ ইলিমেন্ট কে যদি পাইতে চাই তাহলে ঐ মধ্যে একটি আইডি বসাবো এবং document.getElementsbyId('নাম বসাবো তাহলে ইলিমেনটি পেয়ে যাবো')
-        console.log('Hollo internal  javascript ')
-        
-        console.log('hello js')
-        const allHeadins = document.getElementsByTagName('h1')
-        // for(let i=0; i<allHeadins.length; i++){
-        //     h1 = allHeadins[i];
-        //     console.log(h1)
-        // }
-
-        for(const h1 of allHeadins){
-            console.log(h1.innerText)
-        }
-
-        const licollection = document.getElementsByTagName('li')
-
-                for (let i = 0; i < licollection.length; i++) {
-                const li = licollection[i];
-                console.log(li.innerText);
-                }
-                
-                // for(const li of licollection){
-                //     console.log(li)
-                // }
-    </script>
+    <script src="dom.js"></script>
 </body>
 </html>
