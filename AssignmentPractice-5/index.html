@@ -15,7 +15,7 @@
 </head>
 <body style="font-family: 'Work Sans', sans-serif;" class="bg-[#F8F8F8]">
    <section class="bg-[#F9F6E2]">
-    <div class="flex flex-col lg:flex-row max-w-7xl mx-auto gap-6 mt-8">
+    <div class="flex flex-col lg:flex-row max-w-7xl mx-auto gap-6 ">
         <div class=" flex-1 text-center flex flex-col justify-center items-center gap-3 lg:gap-4 px-4 lg:px-0">
             <p class="text-2xl lg:text-3xl font-medium text-black">---SALE FEVER---</p>
             <h1 class="text-4xl lg:text-6xl font-bold text-black">Purchase TK 200 or above & get <span class="text-4xl lg:text-6xl font-bold text-[#E527B2]">20% off</span></h1>
@@ -38,7 +38,7 @@
                 <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod1.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -57,7 +57,7 @@
                 <div onclick="mouchClickBtn(this)" class="card bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod2.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -76,7 +76,7 @@
                 <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod3.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -99,7 +99,7 @@
                 <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod4.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -118,7 +118,7 @@
                 <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod5.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -137,7 +137,7 @@
                 <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
-                            <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/prod6.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
                     <div class="card-body items-center text-center">
@@ -158,8 +158,10 @@
         <div class="flex flex-col gap-5 px-5 lg:px-0 lg:mt-14">
           <div class="bg-[#FFF] p-8">
             <h3 class="text-xl font-semibold mb-2">Have coupon?</h3>
-              <input class="border-solid border-2 border-[#11111180] py-1 pl-1" type="text" placeholder="Coupon code">
-              <button class="py-1  px-2 font-semibold text-xl bg-[#E527B2] text-white">Apply</button>
+              <div class="flex">
+                <input class="border-solid border-2 border-[#11111180] py-1 pl-1" type="text" placeholder="Coupon code">
+              <button class="py-1  px-2 font-semibold text-xl bg-[#E527B2] text-white rounded-r-md ">Apply</button>
+              </div>
           </div>
           <div class=" p-8 flex flex-col gap-2 ">
             
@@ -183,7 +185,7 @@
               <span class="text-2xl font-medium text-[#11111180]">TK</span>
             </p>
             <hr>
-            <button class="w-full bg-[#E527B2] text-white py-2 px-2  disabled:bg-black text-xl font-semibold " id="makePurchase" disabled>Make Purchase</button>
+            <button class="w-full bg-[#E527B2] text-white py-2 px-2  disabled:bg-pink-300 text-xl font-semibold rounded-md" id="makePurchase" disabled>Make Purchase</button>
 
            
           </div>
