@@ -35,7 +35,7 @@
             <h3 class="text-4xl font-semibold text-black text-center lg:text-left mb-5">Kitchenware</h3>
             <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 text-center p-5 lg:p-0">
                 <!-- Kitchenware 1 -->
-                <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod1.png" alt="Shoes" class="h-36" />
@@ -54,7 +54,7 @@
                     </div>
                   </div>
                   <!-- Kitchenware 2 -->
-                <div onclick="mouchClickBtn(this)" class="card bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod2.png" alt="Shoes" class="h-36" />
@@ -73,7 +73,7 @@
                     </div>
                   </div>
                   <!-- Kitchenware 3 -->
-                <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod3.png" alt="Shoes" class="h-36" />
@@ -96,7 +96,7 @@
             <h3 class="text-4xl font-semibold text-black text-center lg:text-left my-4">Sportswear</h3>
             <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 text-center p-5 lg:p-0">
                 <!-- Sportswear 1 -->
-                <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod4.png" alt="Shoes" class="h-36" />
@@ -115,7 +115,7 @@
                     </div>
                   </div>
                 <!-- Sportswear 2 -->
-                <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod5.png" alt="Shoes" class="h-36" />
@@ -134,7 +134,7 @@
                     </div>
                   </div>
                 <!-- Sportswear 3 -->
-                <div onclick="mouchClickBtn(this)" class="card  bg-base-100 shadow-xl">
+                <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
                         <figure class="p-10 bg-[#1111110d]">
                             <img src="images/prod6.png" alt="Shoes" class="h-36" />
@@ -154,46 +154,43 @@
                   </div>
             </div>
         </div>
-        <!-- Have coupon section -->
-        <div class="flex flex-col gap-5 px-5 lg:px-0 lg:mt-14">
+        <!-- discount option section -->
+        <div class="flex flex-col gap-6 px-5 lg:px-0 lg:mt-16">
           <div class="bg-white p-8">
             <h3 class="text-xl font-semibold mb-2">Have coupon?</h3>
               <div class="flex">
-                <input class="border-solid border-2 border-[#11111180] py-1 pl-1" type="text" placeholder="Coupon code">
-              <button class="py-1  px-2 font-semibold text-xl bg-[#E527B2] text-white rounded-r-md ">Apply</button>
+                <input id="discountInput" class="border-solid border-2 border-[#11111180] py-1 pl-1" type="text" placeholder="Coupon code">
+              <button id="applybtn"  class="disabled:bg-pink-300  py-1  px-2 font-semibold text-xl bg-[#E527B2] text-white rounded-r-md " disabled>Apply</button>
               </div>
           </div>
-          <div class=" p-8 flex flex-col gap-2 bg-white">
+          <!-- total amount calculation -->
+          <div class=" p-8 flex flex-col gap-2 bg-white ">
             
             <ul id="selectedItem" class="list-decimal  pl-8 text-2xl font-medium">
               
             </ul>
-            
             <hr>
             <p class="text-2xl font-medium">Total price:
-              <span id="totalPrice" class="text-2xl font-medium text-[#11111180]"> </span> 
+              <span id="totalPrice" class="text-2xl font-medium text-[#11111180]"> 0 </span> 
               <span class="text-2xl font-medium text-[#11111180]">TK</span>
             </p>
 
             <p class="text-2xl font-medium">Discount: 
-              <span id="discount" class="text-2xl font-medium text-[#11111180]"></span>
+              <span id="discount" class="text-2xl font-medium text-[#11111180]">0</span>
               <span class="text-2xl font-medium text-[#11111180]">TK</span>
             </p>
 
             <p class="text-2xl font-medium">Total:
-              <span id="totalAmount" class="text-2xl font-medium text-[#11111180]"></span>
+              <span id="totalAmount" class="text-2xl font-medium text-[#11111180]">0</span>
               <span class="text-2xl font-medium text-[#11111180]">TK</span>
             </p>
             <hr>
             <button class="w-full bg-[#E527B2] text-white py-2 px-2  disabled:bg-pink-300 text-xl font-semibold rounded-md" id="makePurchase" disabled>Make Purchase</button>
-
-           
           </div>
         </div>
     </div>
    </main>
 
-   
    <script src="tailwind.config.js"></script>
    <script src="script.js"></script>
 </body>
