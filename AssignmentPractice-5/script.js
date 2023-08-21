@@ -29,11 +29,10 @@ function mouchClickBtn(target){
 
 document.getElementById('applybtn').addEventListener('click',function(){
 
-    const discountInput = document.getElementById('discountInput').value;
-    discountInput.value = '';
-    console.log(discountInput)
+    const discountInput = document.getElementById('discountInput').value
+    
     if(discountInput === 'SELL200'){
-
+    
     var discountPercentage = 20
     var discountedPrice = (total * (discountPercentage / 100));
     const tofixtDiscountedPrice = discountedPrice.toFixed(2);
@@ -42,9 +41,11 @@ document.getElementById('applybtn').addEventListener('click',function(){
     document.getElementById('totalAmount').innerText =tataolAmount;
     
     }else{
-        alert('plice')
+        alert('Please use promo code')
     }
+    discountInput.value = '';
 })
 
-
-
+document.getElementById('container').addEventListener('click',function(){
+    window.location.href = 'index.html';
+})

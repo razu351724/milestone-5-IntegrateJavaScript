@@ -35,9 +35,9 @@
             <h3 class="text-4xl font-semibold text-black text-center lg:text-left mb-5">Kitchenware</h3>
             <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 text-center p-5 lg:p-0">
                 <!-- Kitchenware 1 -->
-                <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
-                    <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                <div onclick="mouchClickBtn(this)" class="card shadow-xl">
+                    <div class="p-5 ">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod1.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -56,7 +56,7 @@
                   <!-- Kitchenware 2 -->
                 <div onclick="mouchClickBtn(this)" class="card shadow-xl">
                     <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod2.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -75,7 +75,7 @@
                   <!-- Kitchenware 3 -->
                 <div onclick="mouchClickBtn(this)" class="card shadow-xl">
                     <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod3.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -98,7 +98,7 @@
                 <!-- Sportswear 1 -->
                 <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod4.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -117,7 +117,7 @@
                 <!-- Sportswear 2 -->
                 <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod5.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -136,7 +136,7 @@
                 <!-- Sportswear 3 -->
                 <div onclick="mouchClickBtn(this)" class="card  shadow-xl">
                     <div class="p-5">
-                        <figure class="p-10 bg-[#1111110d]">
+                        <figure class="p-10 bg-[#1111110d] rounded-xl">
                             <img src="images/prod6.png" alt="Shoes" class="h-36" />
                           </figure>
                     </div>
@@ -163,6 +163,7 @@
               <button id="applybtn"  class="disabled:bg-pink-300  py-1  px-2 font-semibold text-xl bg-[#E527B2] text-white rounded-r-md " disabled>Apply</button>
               </div>
           </div>
+          
           <!-- total amount calculation -->
           <div class=" p-8 flex flex-col gap-2 bg-white ">
             
@@ -185,11 +186,26 @@
               <span class="text-2xl font-medium text-[#11111180]">TK</span>
             </p>
             <hr>
-            <button class="w-full bg-[#E527B2] text-white py-2 px-2  disabled:bg-pink-300 text-xl font-semibold rounded-md" id="makePurchase" disabled>Make Purchase</button>
+            <button onclick="my_modal_1.showModal()" class=" w-full bg-[#E527B2] text-white py-2 px-2  disabled:bg-pink-300 text-xl font-semibold rounded-md" id="makePurchase" disabled>Make Purchase</button>
           </div>
         </div>
     </div>
    </main>
+
+
+  <dialog id="my_modal_1" class="modal">
+    <form method="dialog" class="modal-box">
+      <div class="flex flex-col justify-center items-center">
+        <img class="w-36 lg:w-60" src="./images/congo.png" alt="#">
+        <h3 class="font-bold text-2xl lg:text-5xl text-black">Congratulations</h3>
+        <p class="py-4 text-xl font-normal  text-[#11111180]">Your Purchase the product</p>
+        <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn bg-[#E527B2] rounded-lg px-3 text-white" id="container">Go Home</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
 
    <script src="tailwind.config.js"></script>
    <script src="script.js"></script>
